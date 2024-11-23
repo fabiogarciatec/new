@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# ERP System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um sistema ERP moderno construído com React, TypeScript e Chakra UI.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 18
+- TypeScript
+- Vite
+- Chakra UI
+- React Router DOM
+- React Icons
 
-## Expanding the ESLint configuration
+## Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
+# Clone o repositório
+git clone https://github.com/SEU_USUARIO/erp-system.git
 
-- Configure the top-level `parserOptions` property like this:
+# Entre no diretório
+cd erp-system
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Scripts
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera a build de produção
+- `npm run lint` - Executa o linter
+- `npm run preview` - Visualiza a build de produção
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## Funcionalidades
+
+- Autenticação de usuários
+- Dashboard com estatísticas
+- Layout responsivo
+- Proteção de rotas
+- Persistência de sessão
+
+## Variáveis de Ambiente
+
+```env
+VITE_API_URL=sua_url_api
+VITE_NETLIFY_URL=sua_url_netlify
 ```
+
+## Layout
+
+- Layout responsivo
+- Tema claro/escuro
+- Componentes Chakra UI
+- Ícones React Icons
+
+## Em Desenvolvimento
+
+- [ ] Integração com backend
+- [ ] Gestão de usuários
+- [ ] Gestão de empresas
+- [ ] Relatórios
+- [ ] Testes automatizados
+
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
